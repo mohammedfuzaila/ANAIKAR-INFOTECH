@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: black;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+nav img {
+    float: left;
+    width: fit-content;
+    height: 185px;
+    position: absolute;
+    top: -45px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: -11px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(93, 221, 225);
+}
+
+#wallpaper {
+    width: 100%;
+    max-width: 230vh;
+    height: 88vh;
+    object-fit: cover;
+}
+
+.page1 {
+    width: 100%;
+}
+
+.bodycontent {
+    font-family: Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 85px;
+    width: fit-content;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.page1 p {
+    color: white;
+}
+
+#imgcont {
+    position: relative;
+    bottom: 600px;
+    left: 345px;
+    width: 470px;
+}
+
+iframe {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+.vid p {
+    font-family: Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 35px;
+    width: fit-content;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.foot {
+    width: 100%;
+}
+
+.foot ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.foot ul li {
+    padding: 50px;
+
+}
+
+.foot ul li a {
+    text-decoration: none;
+}
+
+.foot ul li select {
+    border: 2px solid rgb(93, 221, 225);
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.approval {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* ABOUTPAGE CSS */
+
+.story {
+    width: 100%;
+    color: black;
+    height: fit-content;
+
+}
+
+.story h1 {
+    padding-left: 25px;
+    padding-top: 100px;
+    font-size: 40px;
+}
+
+.story li {
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 40px;
+
+
+}
+
+.assurance {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: 'fantasy';
+    font-size: 15PX;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.assurance h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.assurance img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.specialization {
+    text-align: center;
+    font-size: 25px;
+}
+
+.specialization h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.specialization div {
+    padding-bottom: 20px;
+}
+
+.experts {
+    width: 100%;
+}
+
+.experts h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.expert1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.foundersimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.founders {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    height: 330px;
+    width: 300px;
+    line-height: 30px;
+}
+
+.founders h4 {
+    color: rgb(93, 221, 225);
+    font-weight: bolder;
+}
+
+
+/* Workpage  CSS */
+
+.works {
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.service {
+    width: fit-content;
+    margin-top: 85px;
+    justify-items: center;
+}
+
+.service h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: fit-content;
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+.service a {
+    font-size: 25px;
+    color: rgb(34, 151, 155);
+    text-decoration: none;
+}
+
+/* Blogpage CSS */
+
+.blogs {
+    background-image: url('philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg');
+    color: white;
+    background-size: cover;
+    max-width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.blogs p {
+    padding-top: 80px;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.recent {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.news {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news p {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20PX;
+    font-size: 20px;
+    width: 600px;
+}
+
+.technology {
+
+    list-style: none;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.technology h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.technology li {
+    font-size: 30px;
+    text-align: center;
+}
+
+.language {
+    width: 100%;
+    text-align: center;
+}
+
+.language h1 {
+    padding-bottom: 30px;
+}
+
+.newlang {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.newlang li {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20PX;
+    font-size: 25px;
+    width: 500px;
+}
+
+/* Contactpage CSS */
+
+.contactpage {
+    width: 100%;
+    margin-top: 80px;
+    background-image: url('contact1.jpg');
+    color: white;
+    background-size: cover;
+}
+
+.contacts {
+    text-align: center;
+    width: 100%;
+}
+
+.contacts h1 {
+    padding: 30px;
+}
+
+.contacts button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(34, 151, 155);
+    color: black;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.c1 {
+    padding-left: 60px;
+    width: 100%;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+
+.c1 a {
+    color: black;
+}
+
+.all-conditions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.conditions h3 {
+    color: rgb(34, 151, 155);
+}
+
+.conditions {
+    max-width: 100%;
+    text-align: center;
+    width: 300px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.location {
+
+    display: flex;
+    flex-wrap: wrap;
+  margin: 50px;
+    gap: 60px;
+    justify-content: center;
+ 
+}
+
+.address h3 {
+    line-height: 30px;
+    font-weight: lighter;
+  
+}
+
+.form {
+    margin-top: 50px;
+    width: 100%;
+    justify-items: center;
+}
+
+.apply {
+    max-width:100% ;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: black;
+    width: 500px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#type {
+    max-width:100% ;
+    height: 35px;
+    width: 196px;
+    border: 2px solid #949694;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#enter {
+    max-width:100% ;
+    height: 35px;
+    width: 400px;
+    border: 2px solid #949694;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+
+#feedback {
+    max-width:100% ;
+    height: 70px;
+    width: 400px;
+    border: 2px solid #949694;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#button {
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgb(34, 151, 155);
+    color: white;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+}
