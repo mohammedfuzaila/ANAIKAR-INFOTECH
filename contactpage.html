@@ -24,7 +24,19 @@
                 <li><a href="blogpage.html">Blog</a></li>
                 <li><a href="contactpage.html">Contact</a></li>
             </ul>
+            <div>
+                <button onclick="bar()" class="bar"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </nav>
+    </div>
+    <div class="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutpage.html">About</a></li>
+            <li><a href="Workpage.html">Work</a></li>
+            <li><a href="blogpage.html">Blog</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+        </ul>
     </div>
 
     <div class="contactpage">
@@ -32,13 +44,13 @@
             <h1>OUR CONTACTS</h1>
             <h3>Thanks for your intrest in Anaikar Infotech</h3>
             <h3>Choose from the option below and well connect you with right platform.</h3><br>
-            <a href="#"><button>Send a messages</button></a>
+            <a href=".form"><button>Send a messages</button></a>
         </div>
         <div class="c1">
             <p> <i class="fa-solid fa-envelope"></i>&nbsp; Anaikarinfotech@gmail.com</p><br>
             <p><i class="fa-solid fa-phone"></i>&nbsp; 123-456-789</p><br>
             <p><i class="fa-brands fa-square-instagram"></i>&nbsp;@anaikar_infotech</p><br>
-            <a href="#">Customer service</a>
+            <a href="">Customer service</a>
         </div>
         <div class="all-conditions">
 
@@ -120,4 +132,19 @@
     <div class="approval">
         <h3>© 2025-2080, AnaikarInfoTech.com, Inc. or its affiliates</h3>
     </div>
+    <script>
+        const bar = () => {
+            let sideBar = document.querySelector('.menubar')
+
+            if (sideBar.style.right === '-400px') {
+                sideBar.style.right = '0px'
+            } else {
+                sideBar.style.right = '-400px'
+            }
+            console.log('clicked')
+        }
+        bar()
+    </script>
+</body>
+</html>
     

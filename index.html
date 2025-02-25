@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Anaikar InfoTech</title>
 
@@ -21,8 +24,22 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><img src="logo white.png"></div>
+    <div class="navbar">
+        <nav>
+            <div class="logo"><img src="logo white.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li><a href="Workpage.html">Work</a></li>
+                <li><a href="blogpage.html">Blog</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+            <div>
+                <button onclick="bar()" class="bar"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="menubar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Aboutpage.html">About</a></li>
@@ -30,63 +47,76 @@
             <li><a href="blogpage.html">Blog</a></li>
             <li><a href="contactpage.html">Contact</a></li>
         </ul>
-    </nav>
+    </div>
 
-    <sidebar>
 
-        <div class="page1">
-            <img id="wallpaper" src="main img.jpg">
-            <div class="bodycontent">
-                <h1 id="content">Let's build from here</h1>
-                <p id="content">The world leading IT(Information Technology) daveloper platform</p>
-            </div>
+    <div class="page1">
+        <img id="wallpaper" src="main img.jpg">
+        <div class="bodycontent">
+            <h1 id="content">Let's build from here</h1>
+            <p id="content">The world leading IT(Information Technology) daveloper platform</p>
         </div>
+    </div>
 
-        <div class="vid">
-            <p>IT Based Videos</p><br>
+    <div class="vid">
+        <p>IT Based Videos</p><br>
 
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/XZrckLYqdys?si=XxYpvnX37Ra88use"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/XZrckLYqdys?si=XxYpvnX37Ra88use"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/QyhwSYhX09s?si=Xuj6m2pNBi02ZAJm"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/QyhwSYhX09s?si=Xuj6m2pNBi02ZAJm"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/MNi0lCIYJN8?si=ROuGgjlRYc5SHd3Z"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/MNi0lCIYJN8?si=ROuGgjlRYc5SHd3Z"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        </div><br>
+    </div><br>
+    <hr>
+
+    <div class="foot">
         <hr>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Condition of use</a></li>
+            <li><a href="#">Cookie prefrences </a></li>
+            <li><a href="#">Eu background checks</a></li>
+            <li><a href="#">Translation disclaimer</a></li>
+            <li><select>
+                    <option><i class="fa-solid fa-globe"></i> Language</option>
+                    <option value="English">English</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Japanese">Japanese</option>
+                </select>
+            </li>
+        </ul>
 
-        <div class="foot">
-            <hr>
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Condition of use</a></li>
-                <li><a href="#">Cookie prefrences </a></li>
-                <li><a href="#">Eu background checks</a></li>
-                <li><a href="#">Translation disclaimer</a></li>
-                <li><select>
-                        <option ><i class="fa-solid fa-globe"></i> Language</option>
-                        <option value="English">English</option>
-                        <option value="Tamil">Tamil</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Japanese">Japanese</option>
-                    </select>
-                    </li>
-            </ul>
-
-        </div>
+    </div>
 
 
-        <div class="approval">
-            <h3>© 2025-2080, AnaikarInfoTech.com, Inc. or its affiliates</h3>
-        </div>
+    <div class="approval">
+        <h3>© 2025-2080, AnaikarInfoTech.com, Inc. or its affiliates</h3>
+    </div>
+
+    <script>
+        const bar = () => {
+            let sideBar = document.querySelector('.menubar')
+
+            if (sideBar.style.right === '-400px') {
+                sideBar.style.right = '0px'
+            } else {
+                sideBar.style.right = '-400px'
+            }
+            console.log('clicked')
+        }
+        bar()
+    </script>
 
 
 </body>

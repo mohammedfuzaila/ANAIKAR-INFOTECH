@@ -24,7 +24,19 @@
                 <li><a href="blogpage.html">Blog</a></li>
                 <li><a href="contactpage.html">Contact</a></li>
             </ul>
+            <div>
+                <button onclick="bar()" class="bar"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </nav>
+    </div>
+    <div class="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutpage.html">About</a></li>
+            <li><a href="Workpage.html">Work</a></li>
+            <li><a href="blogpage.html">Blog</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+        </ul>
     </div>
 
     <div class="blogs">
@@ -99,7 +111,7 @@
             <li><a href="#">Eu background checks</a></li>
             <li><a href="#">Translation disclaimer</a></li>
             <li><select>
-                   <option> <i class="fa-solid fa-globe"></i> Language</option>
+                    <option> <i class="fa-solid fa-globe"></i> Language</option>
                     <option value="English">English</option>
                     <option value="Tamil">Tamil</option>
                     <option value="Hindi">Hindi</option>
@@ -114,3 +126,19 @@
     <div class="approval">
         <h3>© 2025-2080, AnaikarInfoTech.com, Inc. or its affiliates</h3>
     </div>
+    <script>
+        const bar = () => {
+            let sideBar = document.querySelector('.menubar')
+
+            if (sideBar.style.right === '-400px') {
+                sideBar.style.right = '0px'
+            } else {
+                sideBar.style.right = '-400px'
+            }
+            console.log('clicked')
+        }
+        bar()
+    </script>
+</body>
+
+</html>

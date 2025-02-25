@@ -7,7 +7,7 @@
 
 nav {
     height: 80px;
-    padding: 10px 90px;
+    padding: 10px 20px;
     box-sizing: border-box;
     background: black;
 
@@ -49,11 +49,50 @@ nav ul li a:hover {
     color: rgb(93, 221, 225);
 }
 
+.bar {
+    color: white;
+    padding: 21px;
+    float: right;
+    position: absolute;
+    left: 80%;
+    display: none;
+
+
+}
+
 #wallpaper {
     width: 100%;
     max-width: 230vh;
     height: 88vh;
     object-fit: cover;
+}
+
+.menubar {
+    width: 250px;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 69px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+    z-index: 999;
+    transition: all 0.4s ease;
+}
+
+.bar {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.menubar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .page1 {
@@ -85,7 +124,7 @@ iframe {
     width: 500px;
     max-width: 90%;
     margin: auto;
-    justify-content: space-around;
+
 }
 
 
@@ -152,7 +191,7 @@ iframe {
 }
 
 .story li {
-    padding-left: 70px;
+    padding-left: 50px;
     font-size: 20px;
     line-height: 40px;
 
@@ -372,7 +411,7 @@ iframe {
 .contactpage {
     width: 100%;
     margin-top: 80px;
-    background-image: url('contact1.jpg');
+    background-image: url('bg contact.jpg');
     color: white;
     background-size: cover;
 }
@@ -389,7 +428,7 @@ iframe {
 .contacts button {
     padding: 10px;
     font-size: 20px;
-    background-color: rgb(34, 151, 155);
+    background-color: rgb(13, 144, 184);
     color: black;
     border: 2px solid white;
     border-radius: 7px;
@@ -403,7 +442,7 @@ iframe {
 }
 
 .c1 a {
-    color: black;
+    color: rgb(13, 144, 184);
 }
 
 .all-conditions {
@@ -417,7 +456,7 @@ iframe {
 }
 
 .conditions h3 {
-    color: rgb(34, 151, 155);
+    color: rgb(13, 144, 184);
 }
 
 .conditions {
@@ -433,16 +472,16 @@ iframe {
 
     display: flex;
     flex-wrap: wrap;
-  margin: 50px;
+    margin: 50px;
     gap: 60px;
     justify-content: center;
- 
+
 }
 
 .address h3 {
     line-height: 30px;
     font-weight: lighter;
-  
+
 }
 
 .form {
@@ -452,7 +491,7 @@ iframe {
 }
 
 .apply {
-    max-width:100% ;
+    max-width: 100%;
     border: 2px solid white;
     border-radius: 7px;
     background-color: black;
@@ -464,7 +503,7 @@ iframe {
 }
 
 #type {
-    max-width:100% ;
+    max-width: 100%;
     height: 35px;
     width: 196px;
     border: 2px solid #949694;
@@ -475,7 +514,7 @@ iframe {
 }
 
 #enter {
-    max-width:100% ;
+    max-width: 100%;
     height: 35px;
     width: 400px;
     border: 2px solid #949694;
@@ -487,7 +526,7 @@ iframe {
 
 
 #feedback {
-    max-width:100% ;
+    max-width: 100%;
     height: 70px;
     width: 400px;
     border: 2px solid #949694;
@@ -502,10 +541,54 @@ iframe {
     padding: 5px;
     font-size: 20px;
     margin-top: 20px;
-    background-color: rgb(34, 151, 155);
+    background-color: rgb(13, 144, 184);
     color: white;
     font-weight: bolder;
     border: 2px solid white;
     padding: 5px;
     cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .bodycontent {
+        font-size: 19px;
+        padding: 8px;
+    }
+}
+
+@media (max-width:425px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .bodycontent {
+        font-size: 17px;
+        padding: 8px;
+    }
+}
+
+@media (max-width:375px) {
+    .bodycontent {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:320px) {
+    .bodycontent {
+        font-size: 15px;
+        padding: 5px;
+    }
 }
