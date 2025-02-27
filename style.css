@@ -82,11 +82,16 @@ nav ul li a:hover {
     z-index: 999;
     transition: all 0.4s ease;
 }
+.menubar li a:hover{
+    color: rgb(93, 221, 225);
+    
+}
 
 .bar {
     background: transparent;
     border: none;
     color: white;
+    font-size: 20px;
 }
 
 .menubar a {
@@ -121,11 +126,11 @@ nav ul li a:hover {
 }
 
 iframe {
-    width: 500px;
-    max-width: 90%;
-    margin: auto;
+    
+    max-width: 100%;
 
 }
+
 
 
 .vid p {
@@ -151,7 +156,7 @@ iframe {
 }
 
 .foot ul li {
-    padding: 50px;
+    padding: 30px;
 
 }
 
@@ -168,10 +173,98 @@ iframe {
     background-color: black;
     color: whitesmoke;
 }
+footer{
+    background:black;
+    padding-top: 50px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer-content{
+    width: fit-content;
+    color: white;
+    margin: 20px;
+}
+.footer-content h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+width: 190px;
+margin: auto;
+padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+    color:white;
+}
+.list li{
+ width: auto;
+ text-align: center;
+ list-style-type: none;
+ padding: 7px;
+position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolut;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color:rgb(34, 151, 155) ;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+}
+.social-icons i{
+    color: white;
+    font: 25px;
+}
+.footer-content a{
+    text-decoration: none;
+}
+.footer-content a:hover{
+    color: rgb(93, 221, 225);
+}
+.social-icons i:hover{
+    color: rgb(93, 221, 225);
+}
+
 
 .approval {
-    padding-left: 50px;
-    padding-bottom: 50px;
+    background-color: rgb(13, 144, 184);
+    text-align: center;
+    padding: 10PX 0;
+    margin-top: 50PX;
+}
+.approval p{
+color: white;
+margin: 0;
+font-size: 16px;
+padding: 7px;
 }
 
 
@@ -549,6 +642,8 @@ iframe {
     cursor: pointer;
 }
 
+
+
 @media (max-width:600px) {
     .navbar ul {
         display: none;
@@ -584,11 +679,15 @@ iframe {
         font-size: 16px;
         padding: 5px;
     }
+   
 }
 
 @media (max-width:320px) {
     .bodycontent {
         font-size: 15px;
         padding: 5px;
+    }
+    .container{
+        gap: 30px;
     }
 }
