@@ -573,11 +573,11 @@ padding: 7px;
 
 .address h3 {
     line-height: 30px;
-    font-weight: lighter;
+    font-weight: bold;
 
 }
 
-.form {
+#form {
     margin-top: 50px;
     width: 100%;
     justify-items: center;
