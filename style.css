@@ -284,7 +284,8 @@ padding: 7px;
 }
 
 .story li {
-    padding-left: 50px;
+   justify-content: space-around;
+   margin: 20px;
     font-size: 20px;
     line-height: 40px;
 
@@ -647,6 +648,9 @@ padding: 7px;
 @media (max-width:600px) {
     .navbar ul {
         display: none;
+    }
+    .foot ul{
+        flex-direction: column;
     }
 
     .bar {
